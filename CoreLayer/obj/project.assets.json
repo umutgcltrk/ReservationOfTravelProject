@@ -1,0 +1,140 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "BusinessLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "DataAccessLayer": "1.0.0",
+          "EntityLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BusinessLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessLayer.dll": {}
+        }
+      },
+      "DataAccessLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "EntityLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DataAccessLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAccessLayer.dll": {}
+        }
+      },
+      "EntityLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/EntityLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EntityLayer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BusinessLayer/1.0.0": {
+      "type": "project",
+      "path": "../BusinessLayer/BusinessLayer.csproj",
+      "msbuildProject": "../BusinessLayer/BusinessLayer.csproj"
+    },
+    "DataAccessLayer/1.0.0": {
+      "type": "project",
+      "path": "../DataAccessLayer/DataAccessLayer.csproj",
+      "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
+    },
+    "EntityLayer/1.0.0": {
+      "type": "project",
+      "path": "../EntityLayer/EntityLayer.csproj",
+      "msbuildProject": "../EntityLayer/EntityLayer.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "BusinessLayer >= 1.0.0",
+      "DataAccessLayer >= 1.0.0",
+      "EntityLayer >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\gcltr\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\gcltr\\source\\repos\\ReservationOfTravel\\CoreLayer\\CoreLayer.csproj",
+      "projectName": "CoreLayer",
+      "projectPath": "C:\\Users\\gcltr\\source\\repos\\ReservationOfTravel\\CoreLayer\\CoreLayer.csproj",
+      "packagesPath": "C:\\Users\\gcltr\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gcltr\\source\\repos\\ReservationOfTravel\\CoreLayer\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\gcltr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Users\\gcltr\\source\\repos\\ReservationOfTravel\\BusinessLayer\\BusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\gcltr\\source\\repos\\ReservationOfTravel\\BusinessLayer\\BusinessLayer.csproj"
+            },
+            "C:\\Users\\gcltr\\source\\repos\\ReservationOfTravel\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\gcltr\\source\\repos\\ReservationOfTravel\\DataAccessLayer\\DataAccessLayer.csproj"
+            },
+            "C:\\Users\\gcltr\\source\\repos\\ReservationOfTravel\\EntityLayer\\EntityLayer.csproj": {
+              "projectPath": "C:\\Users\\gcltr\\source\\repos\\ReservationOfTravel\\EntityLayer\\EntityLayer.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

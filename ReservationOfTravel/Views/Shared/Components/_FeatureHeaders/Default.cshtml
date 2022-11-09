@@ -1,0 +1,19 @@
+﻿@using EntityLayer.Concretes
+@model List<FeatureHeader>
+
+<div class="maghny-gd-1 col-lg-6">//
+              <div class="maghny-grid">
+                <figure class="effect-lily border-radius  m-0">
+                    @foreach(var item in Model){
+                    <img class="img-fluid" src="@item.HeaderPostImage" alt="" />
+                    <figcaption>
+                        <div>
+                            <h4>@item.HeaderTitle</h4>
+                            <p>Sadece @item.HeaderPostDescription $</p>
+                        </div>
+
+                    </figcaption>
+                    }
+                </figure>
+            </div>
+            </div>
